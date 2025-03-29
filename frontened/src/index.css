@@ -1,0 +1,148 @@
+* {
+  color: #fff;
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.app {
+  background-color: #343541;
+  display: flex;
+}
+
+.side-bar {
+  background-color: #202123;
+  height: 100vh;
+  width: 244px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  border: solid 0.5px rgba(255, 255, 255, 0.5);
+  background-color: transparent;
+  margin: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.history {
+  margin: 10px;
+  padding: 10px;
+  height: 100%;
+}
+
+.history li {
+  list-style-type: none;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+nav {
+  border-top: solid 0.5px rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  padding: 10px;
+}
+
+.main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.bottom-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+  max-width: 650px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 20px;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 5px;
+  box-shadow: rgba(255, 255, 255, 0.05) 0 54px 55px,
+    rgba(255, 255, 255, 0.05) 0 -12px 30px, rgba(255, 255, 255, 0.05) 0 4px 6px,
+    rgba(255, 255, 255, 0.05) 0 12px 3px, rgba(255, 255, 255, 0.05) 0 -3px 5px;
+}
+
+input :focus{
+  outline: none;
+}
+
+.submit{
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+  cursor: pointer;
+}
+
+.info {
+  padding: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 11px;
+}
+
+.feed{
+  width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+}
+
+.feed li{
+  width: 100%;
+  background-color: #444654;
+  padding: 20px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+  margin: 20px 0;
+}
+
+.feed p{
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 14px;
+  text-align: left;
+}
+
+.feed p .role{
+  min-width: 100px;
+  margin-right: 10px;
+}
+
+.loader {
+  display: inline-block;
+  border: 4px solid rgba(255, 255, 255, 0.3);
+  border-top: 4px solid white; /* White for visibility */
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
